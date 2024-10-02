@@ -1,0 +1,11 @@
+﻿<RevitAddIns>
+    <AddIn Type="Application">
+        <Name>B.BeaverTools</Name>
+        <Assembly>B.BeaverTools/B.BeaverTools.dll</Assembly>
+        <AddInId>FFD5B3D9-569C-4B15-AFE2-A761631BF61B</AddInId>
+        <FullClassName>B.BeaverTools.Application</FullClassName>
+        <VendorId>Development</VendorId>
+        <VendorDescription></VendorDescription>
+        <VendorEmail></VendorEmail>
+    </AddIn>
+</RevitAddIns>
