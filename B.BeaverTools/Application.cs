@@ -22,10 +22,10 @@ public class Application : ExternalApplication
 
     private void CreateRibbon()
     {
-        var panel = Application.CreatePanel("Commands", "B.BeaverTools");
+        var panel = Application.CreatePanel("BeaverTools", "Add-Ins");
 
         panel.AddPushButton<StartupCommand>("Execute")
-            .SetImage("/B.BeaverTools;component/Resources/Icons/RibbonIcon16.png")
-            .SetLargeImage("/B.BeaverTools;component/Resources/Icons/RibbonIcon32.png");
+            .SetImage("/B.BeaverTools;component/Resources/Icons/icon16.png")
+            .SetLargeImage("/B.BeaverTools;component/Resources/Icons/icon32.png");
     }
 }

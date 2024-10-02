@@ -54,8 +54,10 @@
     </ItemGroup>
 
     <ItemGroup>
-        <Resource Include="Resources\Icons\RibbonIcon16.png"/>
-        <Resource Include="Resources\Icons\RibbonIcon32.png"/>
+        <None Remove="Resources\Icons\icon16.png" />
+        <Resource Include="Resources\Icons\icon16.png" />
+        <None Remove="Resources\Icons\icon32.png" />
+        <Resource Include="Resources\Icons\icon32.png" />
     </ItemGroup>
 
     <ItemGroup>

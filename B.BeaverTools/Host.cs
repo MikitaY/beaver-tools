@@ -6,6 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 using B.BeaverTools.Views;
 using B.BeaverTools.ViewModels;
 using B.BeaverTools.Config;
+using B.BeaverTools.ViewModels.Contracts;
 
 namespace B.BeaverTools;
 
@@ -30,8 +31,8 @@ public static class Host
         builder.Logging.ClearProviders();
         builder.Logging.AddSerilogConfiguration();
 
-        builder.Services.AddTransient<B.BeaverToolsViewModel>();
-        builder.Services.AddTransient<B.BeaverToolsView>();
+        builder.Services.AddTransient<IToolsViewModel, ToolsViewModel>();
+        builder.Services.AddTransient<ToolsView>();
 
         _host = builder.Build();
         _host.Start();

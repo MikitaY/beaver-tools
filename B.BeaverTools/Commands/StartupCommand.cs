@@ -13,7 +13,7 @@ public class StartupCommand : ExternalCommand
 {
     public override void Execute()
     {
-        var view = Host.GetService<B.BeaverToolsView>();
+        var view = Host.GetService<ToolsView>();
         view.Show(UiApplication.MainWindowHandle);
     }
 }
