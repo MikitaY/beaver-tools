@@ -1,5 +1,6 @@
 ﻿using Nice3point.Revit.Toolkit.External;
 using B.BeaverTools.Commands;
+using B.BeaverTools.Core;
 
 namespace B.BeaverTools;
 
@@ -11,6 +12,7 @@ public class Application : ExternalApplication
 {
     public override void OnStartup()
     {
+        RevitApp.UiApplication = UiApplication;
         Host.Start();
         CreateRibbon();
     }

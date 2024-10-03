@@ -10,16 +10,56 @@
     ResizeMode="NoResize"
     WindowStartupLocation="CenterScreen"
     Title="B.BeaverTools"
-    Height="150"
+    Height="520"
     Width="256">
     <StackPanel>
-        <GroupBox Header="Main Tools" Margin="4">
+        <GroupBox Header="2D plane" Margin="4">
             <StackPanel Margin="4">
                 <Button
-                    Command="{Binding StartCommand}"
+                    Command="{Binding PlaceTagOn2DCommand}"
                     Height="32"
                     Margin="16 16 16 0"
-                    Content="Start Command" />
+                    Content="Расположить метки на плане" />
+            </StackPanel>
+        </GroupBox>
+
+        <GroupBox Header="3D view">
+            <StackPanel>
+                <Button
+                    Command="{Binding PlaceTagOn3DCommand}"
+                    Height="32"
+                    Margin="16 16 16 0"
+                    Content="Расположить метки на виде" />
+            </StackPanel>
+        </GroupBox>
+        
+        <GroupBox Header="Инстументы" Margin="4">
+            <StackPanel Margin="4">
+                <Button
+                    Command="{Binding GetCoordCommand}"
+                    Height="32"
+                    Margin="16 16 16 0"
+                    Content="Координаты центра элемента" />
+                <Button
+                    Command="{Binding SolveTagCommand}"
+                    Height="32"
+                    Margin="16 16 16 0"
+                    Content="Найти сводобное место" />
+                <Button
+                    Command="{Binding SolveSomeTagCommand}"
+                    Height="32"
+                    Margin="16 16 16 0"
+                    Content="Показать пересечения" />
+                <Button
+                    Command="{Binding CheckSuperTagCommand}"
+                    Height="32"
+                    Margin="16 16 16 0"
+                    Content="Показать координаты" />
+                <Button
+                    Command="{Binding CheckSuperTagCommand}"
+                    Height="32"
+                    Margin="16 16 16 0"
+                    Content="Решить выбранные" />
             </StackPanel>
         </GroupBox>
     </StackPanel>

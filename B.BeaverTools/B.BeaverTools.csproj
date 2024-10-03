@@ -60,8 +60,4 @@
         <Resource Include="Resources\Icons\icon32.png" />
     </ItemGroup>
 
-    <ItemGroup>
-        <Folder Include="Models"/>
-    </ItemGroup>
-
 </Project>
